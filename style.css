@@ -1,0 +1,73 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: var(--color-bg);
+}
+
+html {
+  --color-primary: rgb(37, 36, 37);
+  --color-secondary: hsl(287, 16%, 28%);
+  --color-tertiary: hsl(273, 35%, 50%);
+  --color-bg: rgb(245, 244, 236);
+}
+
+/*Header*/
+header {
+  color: var(--color-primary);
+}
+
+/* Creations */
+.work_Grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-areas:
+    "left-gutter work1 work2 work3 right-gutter"
+    "left-gutter work4 work5 work6 right-gutter";
+}
+
+.work_showed {
+  height: 400px;
+  width: 400px;
+  background-color: var(--color-secondary);
+}
+
+#work1 {
+  grid-area: work1;
+  background-color: green;
+}
+
+#work2 {
+  grid-area: work2;
+  background-color: pink;
+}
+
+#work3 {
+  grid-area: work3;
+  background-color: yellow;
+}
+
+#work4 {
+  grid-area: work4;
+  background-color: purple;
+}
+
+#work5 {
+  grid-area: work5;
+  background-color: blue;
+}
+
+#work6 {
+  grid-area: work6;
+  background-color: red;
+}
+
+/* About section */
+.About_Img {
+  object-fit: cover;
+  width: 200px;
+}
