@@ -1,0 +1,10 @@
+CHRISTIAN GROEN
+
+https://www.christiangroen.com/
+
+I got this domain a while ago for a portfolio, and i'm sure it helped me get the jobs I've had in 
+the industry over the past couple years! However, it's been long overdue for an update. I had a cooler idea in mind that I was initailly wokring towards.
+I was inspired by the https://jeen-yuhs.com/ website that acompanies the new Kanye documentary. Not any big kanye fan but the docwas cool and the website is really cool.
+I wanted to keep the same effect where when you hover your mouse over different parts of the screen and different pages appear. I could get the divs filling up the right 
+portions of the screen, and the hovering working.. but I couldnt find a work around the CSS hover only being able to effect the element directly after it, with :hover +
+or a few after it with :hover ~. With time ticking i decided to shelf the idea for now and do something more traditional. But i'll definitely be doing that at somepoint.
