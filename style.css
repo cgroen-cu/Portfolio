@@ -1,3 +1,25 @@
+/*Have  flex columns - 
+when it hover chagnes page BG
+Click and brings it tooa full page or reel
+Pages: Animation, Wald, Mikey Bobby, Motion, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-*/
+
 html,
 body {
   margin: 0;
@@ -10,64 +32,71 @@ body {
 }
 
 html {
-  --color-primary: rgb(37, 36, 37);
-  --color-secondary: hsl(287, 16%, 28%);
+  --color-primary: rgb(235, 223, 235);
+  --color-secondary: hsl(287, 43%, 39%);
   --color-tertiary: hsl(273, 35%, 50%);
-  --color-bg: rgb(245, 244, 236);
+  --color-bg: rgb(25, 25, 26);
 }
 
+/*old
 /*Header*/
 header {
-  color: var(--color-primary);
+  color: var(--color-tertiary);
 }
 
-/* Creations */
-.work_Grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-  grid-template-areas:
-    "left-gutter work1 work2 work3 right-gutter"
-    "left-gutter work4 work5 work6 right-gutter";
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200%;
+  width: 100%;
 }
 
-.work_showed {
-  height: 400px;
-  width: 400px;
-  background-color: var(--color-secondary);
+h2 {
+  flex-grow: 1;
+  color: var(--color-secondary);
+  padding-top: 50px;
+  padding-bottom: 5px;
 }
 
-#work1 {
-  grid-area: work1;
-  background-color: green;
+iframe {
+  padding-top: 0px;
+  flex-grow: 3;
+  flex-basis: 20%;
+  width: 80%;
 }
 
-#work2 {
-  grid-area: work2;
-  background-color: pink;
+#animationReelTitle {
 }
 
-#work3 {
-  grid-area: work3;
-  background-color: yellow;
-}
-
-#work4 {
-  grid-area: work4;
-  background-color: purple;
-}
-
-#work5 {
-  grid-area: work5;
-  background-color: blue;
-}
-
-#work6 {
-  grid-area: work6;
-  background-color: red;
+#animationReelVid {
 }
 
 /* About section */
+.About_Section {
+  display: flex;
+  padding: 50px;
+  padding-top: 10%;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .About_Img {
   object-fit: cover;
-  width: 200px;
+  max-height: 500px;
+  max-width: 75%;
+}
+
+p {
+  color: var(--color-primary);
+  max-width: 50ch;
+}
+
+footer {
+  color: var(--color-tertiary);
+  height: 150px;
+  width: 100%;
+  margin-top: 150px;
 }
